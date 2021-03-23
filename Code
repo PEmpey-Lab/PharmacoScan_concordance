@@ -1,0 +1,5 @@
+for file in *R1_001.hard-filtered.gvcf.gz; do
+	bcftools view -R select_targets_wide.bed $file -Oz > ${file/.gvcf*/intermediate}.vcf.gz
+	bcftools index -f -t ${file/.gvcf*/intermediate}.vcf.gz
+	bcftools convert -f hg38.fa --gvcf2vcf ${file/.gvcf*/intermediate}.vcf.gz -Oz -o ${file/.gvcf*/selected_variants}.vcf.gz
+done
