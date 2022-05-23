@@ -1,5 +1,5 @@
 # PharmacoScan_concordance
 
-This repository contains the code referenced in "Concordance Evaluation of PharmacoScan with OpenArray and Next-Generation Sequencing for Population-Scale Preemptive Pharmacogenomics Implementation".
+This repository contains the code referenced in "Concordance of panel-based genotyping and whole genome sequencing for pharmacogenomics implementation".
 
 The purpose of this code is to extract regions of interest from genomic VCF files for concordance evaluation.
